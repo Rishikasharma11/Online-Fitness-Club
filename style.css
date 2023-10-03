@@ -1,0 +1,682 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.main-body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+
+nav{
+    align-items: center;
+    justify-content: space-between; 
+   
+}
+
+nav, ul, li, a{
+    cursor: pointer;
+    color:white;
+    list-style: none; 
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+nav, ul,li, a:hover{
+color: palegreen;
+}
+/* title */
+.top{
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.caption{
+    color: palegreen;
+    font-size: 35px;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    font-weight: bold;
+    
+}
+/* register-button */
+.btn {
+  position: absolute;
+  top: 300px;
+  background: #1bb84d;
+  background-image: -webkit-linear-gradient(top, #1bb84d, #1cb5ba);
+  background-image: -moz-linear-gradient(top, #1bb84d, #1cb5ba);
+  background-image: -ms-linear-gradient(top, #1bb84d, #1cb5ba);
+  background-image: -o-linear-gradient(top, #1bb84d, #1cb5ba);
+  background-image: linear-gradient(to bottom, #1bb84d, #1cb5ba);
+  -webkit-border-radius: 25;
+  -moz-border-radius: 25;
+  border-radius: 25px;
+  font-family: Arial;
+  color: #fffaff;
+  font-size: 26px;
+  padding: 15px 15px 15px 15px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ed0c0c;
+  background-image: -webkit-linear-gradient(top, #ed0c0c, #24040e);
+  background-image: -moz-linear-gradient(top, #ed0c0c, #24040e);
+  background-image: -ms-linear-gradient(top, #ed0c0c, #24040e);
+  background-image: -o-linear-gradient(top, #ed0c0c, #24040e);
+  background-image: linear-gradient(to bottom, #ed0c0c, #24040e);
+  text-decoration: none;
+}
+/* home-section */
+.home-section{
+  color: white;
+  position: relative;
+  width: 100;
+  height: 500px; 
+}
+
+
+
+
+
+/* gym section */
+/* title */
+.activities{
+   font-size: 80px;
+   position: absolute;
+   left: 35%;
+   top: 50px;
+   transform: scale(0.94);
+   animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1); 
+}
+/* cards */
+#gym-section{
+    background-color: white;
+    width: 100%;
+    height: 1500px;
+    position: absolute;
+    margin-top: 1000px; 
+  
+}
+.items-img{
+    padding-top: 0[x];
+    width: 200px;
+    height: 200px;
+}
+.container{
+    padding-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 1400px;
+    justify-content: space-around;
+     
+}
+ .gym-items{
+    background: linear-gradient(to bottom, #000000 18%, #ffffff 109%);
+    margin: 10px 0px;
+    padding: 40px 20px;
+    flex-basis: 23%;
+    color: black;
+    border-radius: 30px;
+    text-align: center;
+    
+}
+
+
+/* cards-button */
+.gym-items-btn{
+        -webkit-border-radius: 60;
+        -moz-border-radius: 60;
+        border-radius: 60px;
+        text-shadow: 2px 4px 30px #000000;
+        font-family: Georgia;
+        color: #ffffff;
+        font-size: 20px;
+        background: #de3535;
+        padding: 10px 20px 10px 20px;
+        border: solid #de3535 3px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
+      .gym-items-btn:hover{
+        background: #ffffff;
+        text-decoration: none;
+        color: black;  
+        font-weight: bold;   
+    }
+      
+@media only screen and (min-width:200px) and (max-width:770px){
+    .container{
+        width:100%;
+        flex-direction: column;
+    }
+}
+ /* diet-section */
+ #diet-section{
+    position: absolute;
+    top: 2200px;
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    color: white;
+ }
+ /* title */
+ .diet-title{
+   font-size: 60px;
+   position: absolute;
+   left: 30%;
+   top: 50px;
+   text-align: center;
+   transform: scale(0.94);
+   animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1);
+   
+}
+@keyframes scale {
+    100% {
+      transform: scale(1.4);
+    }
+  }
+  /* diet-top-img */
+  .diet-top-img{
+    position: absolute;
+    top: 320px;
+    left:550px;
+    box-shadow: 10px 10px 10px 10px #ccc;
+  }
+  /* diet-paragrapgh-1 */
+  .diet-paragraph1{
+    position: absolute;
+    margin: 40px;
+    padding: 40px;
+    line-height: 40px;
+    top: 600px;
+    justify-content: center;
+    font-size: 30px;
+    text-align: justify;
+  }
+
+  /* diet-button */
+  .diet-button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: gray;
+    padding: 15px 15px 15px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 900px;
+    font-size: 26px;
+    text-align: center;
+    margin-left: 30%;
+
+  }
+  
+  .diet-button:hover {
+    background: yellow;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+/* diet-food-heading */
+.diet-food-heading{
+  position: absolute;
+  margin: 30px;
+  padding-top: 820px;
+  font-size: 40px;
+  color: crimson;
+  left: 50px;
+
+}
+/* diet-paragrapgh-2 */
+.diet-paragraph2{
+  font-size: 30px;
+  margin: 40px;
+  padding: 0px 40px;
+  text-align: justify;
+}
+/* diet-flip-box */
+.diet-flip-box{
+  position: absolute;
+  margin: 40px;
+  left: 180px;
+  padding: 20px; 
+}
+
+ .flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  float: left;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-image: linear-gradient(180deg, #000000 0%, #6583fd 50%, #0a0909 100%);
+  color:white;
+  font-size: 20px;
+}
+
+.flip-box-title{
+  margin-top: 120px;
+  font-size: 40px;
+}
+.flip-box-back {
+  transform: rotateX(180deg);
+}
+
+/* gym-diet pre-workout food */
+.pre-workout{
+position: absolute;
+left: 80px;
+top: 900px;
+color: crimson;
+}
+.pre-workout-heading{
+  font-size: 40px;
+}
+.pre-post-workout-paragraph{
+font-size: 20px;
+text-align: justify;
+}
+/* about-us-section */
+#about{
+  background-color: white;
+  position: absolute;
+  top: 3250px;
+  height: 600px;
+  width: 100%;
+}
+.about-section{
+color: black;
+margin-top: 50px;
+padding: 30px;
+}
+
+/* about-us-title*/
+.about-us{
+  position:absolute;
+  font-size: 100px;
+  left: 800px;
+  top:70px;
+}
+/* about-img */
+.about-img{
+padding:50px ;
+}
+/* about-us-pg */
+.about-us-pg{
+  position:absolute;
+  left: 800px;
+  top: 200px;
+  font-size: 30px;
+  text-align: justify;
+  width: 600px;
+  
+}
+
+/* contact-page */
+#contact{
+  position: absolute;
+  top: 3850px;
+  width: 100%;
+  background-image: url("contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-section{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.contact .content 
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+    font-size: 36px;
+    font-family: 500;
+    color: #fff;
+}
+.contact .content p
+{
+font-weight: 300;
+color: #fff;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo
+{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+}
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon
+{
+min-width: 60px;
+height: 60px;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items:center;
+border-radius: 50%;
+font-size: 22px;
+}
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-right: 30px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3
+{
+    font-weight: 400;
+    color: #00bcd4;
+}
+.contactForm 
+{
+width: 40%;
+padding: 60px;
+background-color: #fff;
+margin-left: 40px;
+}
+.contactForm h2 
+{
+font-size: 30px;
+color: #333;
+font-weight: 500;
+}
+
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox.textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+} 
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 2px 0;
+    font-size: 12px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    columns: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type ="submit" ]
+{
+ width: 100px;
+ background: #00bcd4;
+ color: #fff;
+ border: none;
+ cursor: pointer;
+ padding: 10px;
+}
+
+
+/* login-page */
+.login-body{
+  font-family: 'Lato', sans-serif;
+  background-image: url("login.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #4A4A4A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+#bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+form {
+  width: 350px;
+  position: relative;
+}
+form .form-field::before {
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  top: 17px;
+  color: #888888;
+  content: " ";
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+form .form-field:nth-child(1)::before {
+  background-image: url(img/user-icon.png);
+  width: 20px;
+  height: 20px;
+  top: 15px;
+}
+form .form-field:nth-child(2)::before {
+  background-image: url(img/lock-icon.png);
+  width: 16px;
+  height: 16px;
+}
+form .form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+form input {
+  font-family: inherit;
+  width: 100%;
+  outline: none;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  padding: 0.9rem 0.7rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+  color: #4A4A4A;
+  text-indent: 40px;
+}
+form .btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.9rem 2.5rem;
+  text-align: center;
+  background-color: #47AB11;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+  position: absolute;
+  top: 50px;
+  left: 40%;
+}
+
+
+
+
+/* registration-page */
+#registration{
+width: 100%;
+}
+.register{
+  position: absolute;
+  margin: 50px;
+  padding: 50px;
+  background-color: white;
+
+  }
+  /* register-form */
+  .register-form{
+    padding: 12px;
+    width: 50%;
+    align-content: center;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    width: 60%;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit/register button */
+ 
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 400px;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  }
+  /* a {
+    color: dodgerblue;
+  }
+   */
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+  
+    text-align: center;
+  }
+  
+  
